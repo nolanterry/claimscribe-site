@@ -1,0 +1,74 @@
+import Link from "next/link";
+import { FileText } from "lucide-react";
+
+const footerLinks = {
+  Product: [
+    { href: "/features", label: "Features" },
+    { href: "/pricing", label: "Pricing" },
+    { href: "/#how-it-works", label: "How It Works" },
+  ],
+  Company: [
+    { href: "/about", label: "About" },
+    { href: "/blog", label: "Blog" },
+    { href: "#", label: "Careers" },
+  ],
+  Resources: [
+    { href: "/blog/how-to-write-restoration-scope-of-work", label: "Scope Writing Guide" },
+    { href: "/blog/xactimate-tips-faster-claims", label: "Xactimate Tips" },
+    { href: "#", label: "Help Center" },
+  ],
+  Legal: [
+    { href: "#", label: "Privacy Policy" },
+    { href: "#", label: "Terms of Service" },
+    { href: "#", label: "Cookie Policy" },
+  ],
+};
+
+export function Footer() {
+  return (
+    <footer className="border-t border-white/5 bg-[#080810]">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="col-span-2 md:col-span-1">
+            <Link href="/" className="flex items-center gap-2 mb-4">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600">
+                <FileText className="h-5 w-5 text-white" />
+              </div>
+              <span className="text-lg font-bold text-white">ClaimScribe</span>
+            </Link>
+            <p className="text-sm text-gray-500 max-w-xs">
+              AI-powered insurance claim scoping for restoration contractors. From photos to professional scopes in minutes.
+            </p>
+          </div>
+
+          {Object.entries(footerLinks).map(([category, links]) => (
+            <div key={category}>
+              <h3 className="text-sm font-semibold text-white mb-4">{category}</h3>
+              <ul className="space-y-3">
+                {links.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-gray-500 hover:text-gray-300 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-gray-600">
+            &copy; 2026 ClaimScribe AI. All rights reserved.
+          </p>
+          <p className="text-sm text-gray-600">
+            Built for restoration professionals.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
