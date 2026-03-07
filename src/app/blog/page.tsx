@@ -19,51 +19,49 @@ export const metadata: Metadata = {
 
 const posts = [
   {
-    slug: "how-to-write-restoration-scope-of-work",
-    title: "How to Write a Restoration Scope of Work in 2026",
+    slug: "ai-damage-assessment-restoration",
+    title: "How AI Damage Assessment Is Changing Restoration Contracting",
     excerpt:
-      "A comprehensive guide to writing thorough, professional scopes of work that get approved by insurance adjusters on the first submission.",
-    date: "2026-02-18",
-    readTime: "10 min read",
-    category: "Guides",
+      "How AI photo analysis speeds up scoping, reduces missed items, and gets claims approved faster than traditional manual assessment methods.",
+    date: "2026-03-05",
+    readTime: "12 min read",
+    category: "Industry Innovation",
   },
   {
-    slug: "xactimate-tips-faster-claims",
-    title: "Xactimate Tips for Faster Insurance Claims",
+    slug: "xactimate-estimating-tips",
+    title: "Xactimate Estimating Tips: Stop Leaving Money on the Table",
     excerpt:
-      "Practical tips for using Xactimate more efficiently, from keyboard shortcuts to line item strategies that speed up your estimating workflow.",
-    date: "2026-02-10",
-    readTime: "9 min read",
-    category: "Tips & Tricks",
+      "Common line items restoration contractors miss, how AI catches them, and proven supplement strategies that maximize your claim values.",
+    date: "2026-03-01",
+    readTime: "14 min read",
+    category: "Estimating Tips",
   },
   {
-    slug: "ai-restoration-damage-assessment",
-    title:
-      "AI in Restoration: How Technology is Changing Damage Assessment",
+    slug: "water-damage-scope-of-work-template",
+    title: "Water Damage Scope of Work Template: What Every Claim Needs",
     excerpt:
-      "How artificial intelligence is transforming the way restoration contractors assess damage, write scopes, and interact with insurance carriers.",
-    date: "2026-02-03",
-    readTime: "11 min read",
-    category: "Industry Trends",
+      "Walk through a complete water damage scope: demo, mitigation, reconstruction, contents. Learn how ClaimScribe automates this process.",
+    date: "2026-02-28",
+    readTime: "16 min read",
+    category: "Templates & Guides",
   },
   {
-    slug: "water-damage-documentation-best-practices",
-    title: "Water Damage Documentation Best Practices for Contractors",
+    slug: "restoration-contractor-software-2026",
+    title: "Best Restoration Contractor Software in 2026",
     excerpt:
-      "The complete guide to documenting water damage claims, from initial site arrival through final reporting, to maximize claim approvals.",
-    date: "2026-01-27",
-    readTime: "10 min read",
-    category: "Best Practices",
+      "Compare tools restoration contractors use: Xactimate, CoreLogic, Encircle, DASH, and ClaimScribe. Position ClaimScribe as the AI-first alternative.",
+    date: "2026-02-25",
+    readTime: "18 min read",
+    category: "Software Reviews",
   },
   {
-    slug: "restoration-contractors-leaving-money",
-    title:
-      "Why Restoration Contractors Leave Money on the Table (And How to Fix It)",
+    slug: "insurance-claim-documentation-tips",
+    title: "Insurance Claim Documentation: A Contractor's Guide to Getting Paid",
     excerpt:
-      "Common mistakes that cost restoration contractors thousands per claim, and actionable strategies to capture every dollar you deserve.",
-    date: "2026-01-20",
-    readTime: "9 min read",
-    category: "Business Growth",
+      "Photo documentation best practices, what adjusters look for, and how to avoid claim denials that delay payment and damage customer relationships.",
+    date: "2026-02-22",
+    readTime: "15 min read",
+    category: "Documentation Guide",
   },
 ];
 
