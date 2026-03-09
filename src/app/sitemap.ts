@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const blogSlugs = [
+  "insurance-companies-using-ai-against-contractors",
   "ai-damage-assessment-restoration",
   "ai-restoration-damage-assessment",
   "how-to-write-restoration-scope-of-work",

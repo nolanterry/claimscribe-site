@@ -19,6 +19,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "insurance-companies-using-ai-against-contractors",
+    title: "Insurance Companies Are Using AI to Write Estimates — Here's How Contractors Can Fight Back",
+    excerpt:
+      "Carriers are deploying AI to generate damage estimates, bypassing adjusters entirely. Contractors without AI tools are at a growing disadvantage in claim disputes.",
+    date: "2026-03-09",
+    readTime: "9 min read",
+    category: "Industry Trends",
+  },
+  {
     slug: "ai-damage-assessment-restoration",
     title: "How AI Damage Assessment Is Changing Restoration Contracting",
     excerpt:
