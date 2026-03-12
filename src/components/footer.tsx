@@ -9,8 +9,8 @@ const footerLinks = {
   ],
   Company: [
     { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
     { href: "/blog", label: "Blog" },
-    { href: "#", label: "Careers" },
   ],
   Resources: [
     { href: "/blog/how-to-write-restoration-scope-of-work", label: "Scope Writing Guide" },
