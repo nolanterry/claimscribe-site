@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FileText } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = {
   Product: [
@@ -31,9 +31,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600">
-                <FileText className="h-5 w-5 text-white" />
-              </div>
+              <Image src="/logo.svg" alt="ClaimScribe" width={24} height={24} className="invert" />
               <span className="text-lg font-bold text-white">ClaimScribe</span>
             </Link>
             <p className="text-sm text-gray-500 max-w-xs">

@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, FileText } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/features", label: "Features" },
@@ -23,9 +24,7 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600">
-              <FileText className="h-5 w-5 text-white" />
-            </div>
+            <Image src="/logo.svg" alt="ClaimScribe" width={28} height={28} className="invert" />
             <span className="text-lg font-bold text-white">ClaimScribe</span>
             <span className="text-xs font-medium text-primary-400">AI</span>
           </Link>
