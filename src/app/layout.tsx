@@ -32,6 +32,13 @@ export const metadata: Metadata = {
     "fire damage",
     "claim scoping",
   ],
+  openGraph: {
+    type: "website",
+    siteName: "ClaimScribe AI",
+    title: "ClaimScribe AI — AI-Powered Damage Scoping for Restoration Contractors",
+    description: "Photo AI damage analysis, voice-to-scope, Xactimate codes, branded PDF reports. Never miss a billable line item again.",
+  },
+  twitter: { card: "summary_large_image" },
   icons: {
     icon: [{ url: "/favicon-32.png", sizes: "32x32", type: "image/png" }],
     apple: [{ url: "/apple-touch-icon.png" }],
