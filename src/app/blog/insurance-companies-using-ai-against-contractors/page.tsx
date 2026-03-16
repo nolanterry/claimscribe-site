@@ -19,7 +19,59 @@ export const metadata: Metadata = {
 
 export default function InsuranceCompaniesUsingAIAgainstContractors() {
   return (
-    <article className="py-24">
+    
+  const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Insurance Companies Are Using AI to Write Estimates — Here's How Contractors Can Fight Back",
+  "description": "Insurance carriers are deploying AI to generate their own damage estimates, cutting adjusters out of the loop. Restoration contractors without AI tools are at a growing disadvantage in claim disputes.",
+  "datePublished": "2026-03-09",
+  "dateModified": "2026-03-09",
+  "author": {
+    "@type": "Organization",
+    "name": "ClaimScribe",
+    "url": "https://claimscribe.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ClaimScribe",
+    "url": "https://claimscribe.ai"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://claimscribe.ai/blog/insurance-companies-using-ai-against-contractors"
+  }
+};
+  
+  const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://claimscribe.ai"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://claimscribe.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Insurance Companies Are Using AI to Write Estimates — Here's How Contractors Can Fight Back",
+      "item": "https://claimscribe.ai/blog/insurance-companies-using-ai-against-contractors"
+    }
+  ]
+};
+
+  return (
+    <article
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} /> className="py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Link
           href="/blog"

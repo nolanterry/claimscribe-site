@@ -19,7 +19,59 @@ export const metadata: Metadata = {
 
 export default function XactimateEstimatingTips() {
   return (
-    <article className="py-24">
+    
+  const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Xactimate Estimating Tips: Stop Leaving Money on the Table",
+  "description": "Essential Xactimate tips for restoration contractors to maximize claim values. Learn common missed line items, supplement strategies, and how AI can boost your estimating accuracy.",
+  "datePublished": "2026-03-01",
+  "dateModified": "2026-03-01",
+  "author": {
+    "@type": "Organization",
+    "name": "ClaimScribe",
+    "url": "https://claimscribe.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ClaimScribe",
+    "url": "https://claimscribe.ai"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://claimscribe.ai/blog/xactimate-estimating-tips"
+  }
+};
+  
+  const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://claimscribe.ai"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://claimscribe.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Xactimate Estimating Tips: Stop Leaving Money on the Table",
+      "item": "https://claimscribe.ai/blog/xactimate-estimating-tips"
+    }
+  ]
+};
+
+  return (
+    <article
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} /> className="py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Link
           href="/blog"

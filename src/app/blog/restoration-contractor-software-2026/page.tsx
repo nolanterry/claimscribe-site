@@ -19,7 +19,59 @@ export const metadata: Metadata = {
 
 export default function RestorationContractorSoftware2026() {
   return (
-    <article className="py-24">
+    
+  const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Best Restoration Contractor Software in 2026",
+  "description": "Compare top restoration contractor software: Xactimate, CoreLogic, Encircle, DASH, and ClaimScribe. Find the best tools for estimating, project management, and AI-powered scoping.",
+  "datePublished": "2026-02-25",
+  "dateModified": "2026-02-25",
+  "author": {
+    "@type": "Organization",
+    "name": "ClaimScribe",
+    "url": "https://claimscribe.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ClaimScribe",
+    "url": "https://claimscribe.ai"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://claimscribe.ai/blog/restoration-contractor-software-2026"
+  }
+};
+  
+  const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://claimscribe.ai"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://claimscribe.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Best Restoration Contractor Software in 2026",
+      "item": "https://claimscribe.ai/blog/restoration-contractor-software-2026"
+    }
+  ]
+};
+
+  return (
+    <article
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} /> className="py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Link
           href="/blog"

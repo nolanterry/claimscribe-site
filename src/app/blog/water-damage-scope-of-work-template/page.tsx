@@ -19,7 +19,59 @@ export const metadata: Metadata = {
 
 export default function WaterDamageScopeOfWorkTemplate() {
   return (
-    <article className="py-24">
+    
+  const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Water Damage Scope of Work Template: What Every Claim Needs",
+  "description": "Complete water damage scope of work template for restoration contractors. Learn essential phases: demo, mitigation, reconstruction, and contents. See how ClaimScribe automates scoping.",
+  "datePublished": "2026-02-28",
+  "dateModified": "2026-02-28",
+  "author": {
+    "@type": "Organization",
+    "name": "ClaimScribe",
+    "url": "https://claimscribe.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ClaimScribe",
+    "url": "https://claimscribe.ai"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://claimscribe.ai/blog/water-damage-scope-of-work-template"
+  }
+};
+  
+  const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://claimscribe.ai"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://claimscribe.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Water Damage Scope of Work Template: What Every Claim Needs",
+      "item": "https://claimscribe.ai/blog/water-damage-scope-of-work-template"
+    }
+  ]
+};
+
+  return (
+    <article
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} /> className="py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Link
           href="/blog"
