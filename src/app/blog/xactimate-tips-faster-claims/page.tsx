@@ -18,7 +18,44 @@ export const metadata: Metadata = {
 };
 
 export default function XactimateTipsFasterClaims() {
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Xactimate Tips for Faster Insurance Claims",
+    "description": "Practical Xactimate tips and tricks for restoration contractors. Learn keyboard shortcuts, line item strategies, and workflow optimizations to speed up your insurance claim estimates.",
+    "datePublished": "2026-02-10",
+    "dateModified": "2026-02-10",
+    "author": {
+      "@type": "Organization",
+      "name": "ClaimScribe",
+      "url": "https://claimscribe.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ClaimScribe",
+      "url": "https://claimscribe.ai"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://claimscribe.ai/blog/xactimate-tips-faster-claims"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://claimscribe.ai" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://claimscribe.ai/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Xactimate Tips for Faster Insurance Claims", "item": "https://claimscribe.ai/blog/xactimate-tips-faster-claims" }
+    ]
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <article className="py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Link
@@ -291,5 +328,6 @@ export default function XactimateTipsFasterClaims() {
         </div>
       </div>
     </article>
+    </>
   );
 }

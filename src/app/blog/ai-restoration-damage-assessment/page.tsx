@@ -18,7 +18,44 @@ export const metadata: Metadata = {
 };
 
 export default function AIRestorationDamageAssessment() {
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI in Restoration: How Technology is Changing Damage Assessment",
+    "description": "Discover how artificial intelligence is transforming damage assessment for restoration contractors. Learn about AI-powered scoping, computer vision, and the future of insurance claims.",
+    "datePublished": "2026-02-03",
+    "dateModified": "2026-02-03",
+    "author": {
+      "@type": "Organization",
+      "name": "ClaimScribe",
+      "url": "https://claimscribe.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ClaimScribe",
+      "url": "https://claimscribe.ai"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://claimscribe.ai/blog/ai-restoration-damage-assessment"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://claimscribe.ai" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://claimscribe.ai/blog" },
+      { "@type": "ListItem", "position": 3, "name": "AI in Restoration: How Technology is Changing Damage Assessment", "item": "https://claimscribe.ai/blog/ai-restoration-damage-assessment" }
+    ]
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <article className="py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Link
@@ -313,5 +350,6 @@ export default function AIRestorationDamageAssessment() {
         </div>
       </div>
     </article>
+    </>
   );
 }

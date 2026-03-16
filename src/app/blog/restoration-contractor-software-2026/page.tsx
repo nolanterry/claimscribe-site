@@ -18,8 +18,6 @@ export const metadata: Metadata = {
 };
 
 export default function RestorationContractorSoftware2026() {
-  return (
-    
   const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -69,9 +67,10 @@ export default function RestorationContractorSoftware2026() {
 };
 
   return (
-    <article
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} /> className="py-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+    <article className="py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Link
           href="/blog"
@@ -524,5 +523,6 @@ export default function RestorationContractorSoftware2026() {
         </div>
       </div>
     </article>
+    </>
   );
 }

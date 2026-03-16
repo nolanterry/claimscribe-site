@@ -19,7 +19,44 @@ export const metadata: Metadata = {
 };
 
 export default function WaterDamageDocumentationBestPractices() {
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Water Damage Documentation Best Practices for Contractors",
+    "description": "The complete guide to documenting water damage claims for restoration contractors. Learn photo documentation, moisture mapping, drying logs, and scope writing best practices to maximize claim approvals.",
+    "datePublished": "2026-01-27",
+    "dateModified": "2026-01-27",
+    "author": {
+      "@type": "Organization",
+      "name": "ClaimScribe",
+      "url": "https://claimscribe.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ClaimScribe",
+      "url": "https://claimscribe.ai"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://claimscribe.ai/blog/water-damage-documentation-best-practices"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://claimscribe.ai" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://claimscribe.ai/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Water Damage Documentation Best Practices for Contractors", "item": "https://claimscribe.ai/blog/water-damage-documentation-best-practices" }
+    ]
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <article className="py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Link
@@ -298,5 +335,6 @@ export default function WaterDamageDocumentationBestPractices() {
         </div>
       </div>
     </article>
+    </>
   );
 }

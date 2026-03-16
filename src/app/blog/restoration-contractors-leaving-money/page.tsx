@@ -19,7 +19,44 @@ export const metadata: Metadata = {
 };
 
 export default function RestorationContractorsLeavingMoney() {
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Why Restoration Contractors Leave Money on the Table (And How to Fix It)",
+    "description": "Common mistakes that cost restoration contractors thousands per claim. Learn actionable strategies for thorough scoping, proper documentation, and capturing every reimbursable line item.",
+    "datePublished": "2026-01-20",
+    "dateModified": "2026-01-20",
+    "author": {
+      "@type": "Organization",
+      "name": "ClaimScribe",
+      "url": "https://claimscribe.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ClaimScribe",
+      "url": "https://claimscribe.ai"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://claimscribe.ai/blog/restoration-contractors-leaving-money"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://claimscribe.ai" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://claimscribe.ai/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Why Restoration Contractors Leave Money on the Table (And How to Fix It)", "item": "https://claimscribe.ai/blog/restoration-contractors-leaving-money" }
+    ]
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <article className="py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Link
@@ -313,5 +350,6 @@ export default function RestorationContractorsLeavingMoney() {
         </div>
       </div>
     </article>
+    </>
   );
 }
