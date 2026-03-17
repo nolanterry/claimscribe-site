@@ -1,6 +1,12 @@
 import type { MetadataRoute } from "next";
 
 const blogSlugs = [
+  "fire-damage-restoration-scoping-guide",
+  "mold-remediation-scope-of-work",
+  "supplement-writing-restoration-contractors",
+  "storm-damage-assessment-checklist",
+  "restoration-contractor-profit-margins",
+  "contents-cleaning-pack-out-guide",
   "insurance-companies-using-ai-against-contractors",
   "ai-damage-assessment-restoration",
   "ai-restoration-damage-assessment",
