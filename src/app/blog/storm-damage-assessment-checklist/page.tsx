@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "storm restoration scoping",
     "storm damage Xactimate",
   ],
+  alternates: { canonical: "/blog/storm-damage-assessment-checklist" },
 };
 
 export default function StormDamageChecklist() {

@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "insurance claim documentation",
     "drying log",
   ],
+  alternates: { canonical: "/blog/water-damage-documentation-best-practices" },
 };
 
 export default function WaterDamageDocumentationBestPractices() {

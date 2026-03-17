@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "computer vision damage detection",
     "AI insurance claims restoration",
   ],
+  alternates: { canonical: "/blog/ai-damage-assessment-restoration" },
 };
 
 export default function AIDamageAssessmentRestoration() {

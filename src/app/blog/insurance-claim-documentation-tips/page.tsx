@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "claim denial prevention contractor",
     "insurance documentation requirements",
   ],
+  alternates: { canonical: "/blog/insurance-claim-documentation-tips" },
 };
 
 export default function InsuranceClaimDocumentationTips() {

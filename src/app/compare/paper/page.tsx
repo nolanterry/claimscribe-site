@@ -5,6 +5,7 @@ import { Camera, Check, X, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "ClaimScribe vs Manual Scoping — Why AI Beats Clipboard and Notepad",
   description: "Still scoping damage with a clipboard? Here's what manual scoping is costing you in time, missed line items, and supplement delays.",
+  alternates: { canonical: "/compare/paper" },
 };
 
 export default function ComparePaper() {

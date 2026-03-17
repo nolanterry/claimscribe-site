@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "AI-Powered Damage Scoping Software | ClaimScribe",
   description: "Turn site photos and voice notes into insurance-ready damage scopes in minutes. AI damage analysis, Xactimate code mapping, and room-by-room organization.",
   robots: { index: false, follow: false },
+  alternates: { canonical: "/lp/ai-damage-scoping" },
 };
 
 const PAIN_POINTS = [

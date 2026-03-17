@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "mold damage restoration",
     "mold remediation Xactimate",
   ],
+  alternates: { canonical: "/blog/mold-remediation-scope-of-work" },
 };
 
 export default function MoldRemediationScopeOfWork() {

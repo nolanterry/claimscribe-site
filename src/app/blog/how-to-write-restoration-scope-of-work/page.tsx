@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "scope of work template",
     "Xactimate scope",
   ],
+  alternates: { canonical: "/blog/how-to-write-restoration-scope-of-work" },
 };
 
 export default function HowToWriteRestorationScopeOfWork() {

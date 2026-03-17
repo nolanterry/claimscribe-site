@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "claim settlement tips",
     "restoration contractor tips",
   ],
+  alternates: { canonical: "/blog/restoration-contractors-leaving-money" },
 };
 
 export default function RestorationContractorsLeavingMoney() {

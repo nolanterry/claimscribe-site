@@ -5,6 +5,7 @@ import { Camera, Check, X, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "ClaimScribe vs Encircle — AI Damage Scoping Comparison",
   description: "Compare ClaimScribe AI and Encircle for restoration field documentation. Features, pricing, and which is better for your restoration company.",
+  alternates: { canonical: "/compare/encircle" },
 };
 
 export default function CompareEncircle() {

@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "XM8 pricing database",
     "Xactimate line items",
   ],
+  alternates: { canonical: "/blog/xactimate-tips-faster-claims" },
 };
 
 export default function XactimateTipsFasterClaims() {

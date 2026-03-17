@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "missed line items xactimate",
     "xactimate pricing restoration",
   ],
+  alternates: { canonical: "/blog/xactimate-estimating-tips" },
 };
 
 export default function XactimateEstimatingTips() {

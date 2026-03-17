@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "mitigation scope template",
     "water restoration checklist",
   ],
+  alternates: { canonical: "/blog/water-damage-scope-of-work-template" },
 };
 
 export default function WaterDamageScopeOfWorkTemplate() {

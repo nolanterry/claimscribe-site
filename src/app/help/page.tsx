@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "ClaimScribe AI Help Center",
     description: "Everything you need to scope damage faster and more accurately with ClaimScribe AI.",
   },
+  alternates: { canonical: "/help" },
 };
 
 export default function HelpPage() {

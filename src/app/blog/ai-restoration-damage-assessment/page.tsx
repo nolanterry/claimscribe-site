@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "restoration technology",
     "automated damage assessment",
   ],
+  alternates: { canonical: "/blog/ai-restoration-damage-assessment" },
 };
 
 export default function AIRestorationDamageAssessment() {

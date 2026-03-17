@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "Xactimate AI",
     "contractor vs insurance AI",
   ],
+  alternates: { canonical: "/blog/insurance-companies-using-ai-against-contractors" },
 };
 
 export default function InsuranceCompaniesUsingAIAgainstContractors() {

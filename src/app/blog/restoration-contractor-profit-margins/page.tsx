@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "restoration business revenue",
     "restoration contractor overhead",
   ],
+  alternates: { canonical: "/blog/restoration-contractor-profit-margins" },
 };
 
 export default function RestorationProfitMargins() {

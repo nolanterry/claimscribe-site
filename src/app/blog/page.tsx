@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "AI restoration technology",
     "insurance claim tips",
   ],
+  alternates: { canonical: "/blog" },
 };
 
 const posts = [

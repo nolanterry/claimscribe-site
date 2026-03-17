@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "restoration pack out process",
     "contents claim Xactimate",
   ],
+  alternates: { canonical: "/blog/contents-cleaning-pack-out-guide" },
 };
 
 export default function ContentsCleaningGuide() {

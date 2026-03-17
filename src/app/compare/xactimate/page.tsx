@@ -5,6 +5,7 @@ import { Camera, Check, X, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "ClaimScribe vs Xactimate — AI Damage Scoping Comparison",
   description: "Compare ClaimScribe AI and Xactimate for restoration damage scoping. Features, pricing, and which is better for restoration contractors.",
+  alternates: { canonical: "/compare/xactimate" },
 };
 
 export default function CompareXactimate() {

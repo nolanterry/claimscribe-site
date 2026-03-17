@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "restoration contractor fire damage",
     "structure fire scoping guide",
   ],
+  alternates: { canonical: "/blog/fire-damage-restoration-scoping-guide" },
 };
 
 export default function FireDamageScopingGuide() {

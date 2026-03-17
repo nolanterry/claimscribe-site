@@ -16,6 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://claimscribe.ai"),
   title: {
     default: "ClaimScribe AI - AI-Powered Insurance Claim Scoping",
     template: "%s | ClaimScribe AI",

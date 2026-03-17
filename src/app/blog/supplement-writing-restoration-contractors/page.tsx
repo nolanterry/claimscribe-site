@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "restoration supplement process",
     "insurance supplement approval",
   ],
+  alternates: { canonical: "/blog/supplement-writing-restoration-contractors" },
 };
 
 export default function SupplementWritingGuide() {

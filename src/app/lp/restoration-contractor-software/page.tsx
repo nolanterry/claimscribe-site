@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "AI Scoping Software for Restoration Contractors | ClaimScribe",
   description: "Purpose-built for water, fire, mold, and storm damage restoration. AI-powered scoping with Xactimate codes, voice-to-scope, and adjuster-ready reports.",
   robots: { index: false, follow: false },
+  alternates: { canonical: "/lp/restoration-contractor-software" },
 };
 
 const DAMAGE_TYPES = [

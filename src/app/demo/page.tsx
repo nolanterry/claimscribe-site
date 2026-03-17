@@ -5,6 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Book a Demo — See ClaimScribe AI in Action",
   description: "Schedule a personalized demo of ClaimScribe AI damage scoping software. See AI photo analysis, voice-to-scope, and Xactimate integration for restoration contractors.",
+  alternates: { canonical: "/demo" },
 };
 
 const DEMO_INCLUDES = [

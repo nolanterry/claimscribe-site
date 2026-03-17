@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "restoration business software",
     "contractor project management software",
   ],
+  alternates: { canonical: "/blog/restoration-contractor-software-2026" },
 };
 
 export default function RestorationContractorSoftware2026() {
