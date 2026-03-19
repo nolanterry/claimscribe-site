@@ -156,6 +156,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-background text-foreground`}
       >
+        <a href="#main-content" className="skip-to-content">
+          Skip to main content
+        </a>
         {structuredData.map((data, i) => (
           <script
             key={i}
@@ -164,7 +167,7 @@ export default function RootLayout({
           />
         ))}
         <Navbar />
-        <main className="min-h-screen pt-16">{children}</main>
+        <main id="main-content" className="min-h-screen pt-16">{children}</main>
         <Footer />
       </body>
     </html>

@@ -64,6 +64,7 @@ export default function Contact() {
                   <input
                     type="text"
                     required
+            aria-required="true"
                     placeholder="John Martinez"
                     className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white placeholder-gray-600 focus:border-primary-500/40 focus:outline-none focus:ring-1 focus:ring-primary-500/30 transition-all"
                   />
@@ -75,6 +76,7 @@ export default function Contact() {
                   <input
                     type="email"
                     required
+            aria-required="true"
                     placeholder="john@restorationco.com"
                     className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white placeholder-gray-600 focus:border-primary-500/40 focus:outline-none focus:ring-1 focus:ring-primary-500/30 transition-all"
                   />
@@ -88,6 +90,7 @@ export default function Contact() {
                   <input
                     type="text"
                     required
+            aria-required="true"
                     placeholder="ABC Restoration"
                     className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white placeholder-gray-600 focus:border-primary-500/40 focus:outline-none focus:ring-1 focus:ring-primary-500/30 transition-all"
                   />
@@ -110,6 +113,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   required
+            aria-required="true"
                   rows={5}
                   placeholder="Tell us about your restoration business, current scoping process, or any questions about ClaimScribe..."
                   className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white placeholder-gray-600 focus:border-primary-500/40 focus:outline-none focus:ring-1 focus:ring-primary-500/30 transition-all resize-none"

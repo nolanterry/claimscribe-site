@@ -21,12 +21,13 @@ const footerLinks = {
   Legal: [
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms of Service" },
+    { href: "/accessibility", label: "Accessibility" },
   ],
 };
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-[#080810]">
+    <footer role="contentinfo" className="border-t border-white/5 bg-[#080810]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
