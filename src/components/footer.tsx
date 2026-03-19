@@ -15,6 +15,7 @@ const footerLinks = {
   Resources: [
     { href: "/blog/how-to-write-restoration-scope-of-work", label: "Scope Writing Guide" },
     { href: "/blog/xactimate-tips-faster-claims", label: "Xactimate Tips" },
+    { href: "/customers", label: "Customers" },
     { href: "/help", label: "Help Center" },
   ],
   Legal: [
