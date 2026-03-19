@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { ExitIntentPopup } from "@/components/exit-intent-popup";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -169,6 +170,7 @@ export default function RootLayout({
         <Navbar />
         <main id="main-content" className="min-h-screen pt-16">{children}</main>
         <Footer />
+        <ExitIntentPopup />
       </body>
     </html>
   );
