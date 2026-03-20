@@ -1,3 +1,4 @@
+import { NewsletterSignup } from "@/components/newsletter-signup";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -328,6 +329,7 @@ export default function XactimateTipsFasterClaims() {
           </div>
         </div>
       </div>
+      <div className="not-prose max-w-3xl mx-auto px-4"><NewsletterSignup /></div>
     </article>
     </>
   );

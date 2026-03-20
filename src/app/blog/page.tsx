@@ -1,3 +1,4 @@
+import { NewsletterSignup } from "@/components/newsletter-signup";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Calendar } from "lucide-react";
@@ -249,6 +250,7 @@ export default function BlogIndexPage() {
           </div>
         </div>
       </section>
+      <div className="max-w-3xl mx-auto px-4 pb-12"><NewsletterSignup /></div>
     </>
   );
 }
