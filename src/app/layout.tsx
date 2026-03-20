@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ExitIntentPopup } from "@/components/exit-intent-popup";
 import { CookieConsent } from "@/components/cookie-consent";
+import { PromoBar } from "@/components/promo-bar";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -158,6 +159,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-background text-foreground`}
       >
+        <PromoBar />
         <a href="#main-content" className="skip-to-content">
           Skip to main content
         </a>
