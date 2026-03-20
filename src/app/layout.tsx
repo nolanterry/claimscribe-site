@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ExitIntentPopup } from "@/components/exit-intent-popup";
+import { CookieConsent } from "@/components/cookie-consent";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -171,6 +172,7 @@ export default function RootLayout({
         <main id="main-content" className="min-h-screen pt-16">{children}</main>
         <Footer />
         <ExitIntentPopup />
+        <CookieConsent />
       </body>
     </html>
   );
