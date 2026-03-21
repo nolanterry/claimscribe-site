@@ -1,8 +1,6 @@
 import { NewsletterSignup } from "@/components/newsletter-signup";
+import { BlogSearch } from "@/components/blog-search";
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight, Calendar } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Blog - Restoration Industry Insights & Tips",
@@ -215,39 +213,7 @@ export default function BlogIndexPage() {
 
       <section className="py-24 border-t border-white/5">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6">
-            {posts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`}>
-                <Card className="hover:border-primary-600/30 transition-colors bg-card/50 group">
-                  <CardContent className="p-6 sm:p-8">
-                    <div className="flex items-center gap-3 text-xs text-gray-500 mb-3">
-                      <span className="px-2 py-0.5 rounded-full border border-primary-600/20 text-primary-400">
-                        {post.category}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Calendar className="h-3 w-3" />
-                        {new Date(post.date).toLocaleDateString("en-US", {
-                          year: "numeric",
-                          month: "long",
-                          day: "numeric",
-                        })}
-                      </span>
-                      <span>{post.readTime}</span>
-                    </div>
-                    <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-primary-400 transition-colors">
-                      {post.title}
-                    </h2>
-                    <p className="text-gray-400 leading-relaxed mb-4">
-                      {post.excerpt}
-                    </p>
-                    <span className="inline-flex items-center text-sm text-primary-400 font-medium">
-                      Read article <ArrowRight className="ml-1 h-4 w-4" />
-                    </span>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
+          <BlogSearch posts={posts} />
         </div>
       </section>
       <div className="max-w-3xl mx-auto px-4 pb-12"><NewsletterSignup /></div>
