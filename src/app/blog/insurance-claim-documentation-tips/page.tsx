@@ -1,4 +1,6 @@
 import { NewsletterSignup } from "@/components/newsletter-signup";
+import { ReadingProgressBar } from "@/components/reading-progress";
+import { TableOfContents } from "@/components/table-of-contents";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
