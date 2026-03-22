@@ -2,6 +2,7 @@ import { NewsletterSignup } from "@/components/newsletter-signup";
 import { ReadingProgressBar } from "@/components/reading-progress";
 import { TableOfContents } from "@/components/table-of-contents";
 import { RelatedPosts } from "@/components/related-posts";
+import { AuthorByline } from "@/components/author-byline";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -32,9 +33,9 @@ export default function AIRestorationDamageAssessment() {
     "datePublished": "2026-02-03",
     "dateModified": "2026-02-03",
     "author": {
-      "@type": "Organization",
-      "name": "ClaimScribe",
-      "url": "https://claimscribe.ai"
+      "@type": "Person",
+      "name": "Nolan Terry",
+      "url": "https://claimscribe.ai/blog/authors/nolan-terry"
     },
     "publisher": {
       "@type": "Organization",
@@ -93,6 +94,7 @@ export default function AIRestorationDamageAssessment() {
             contractors assess damage, write scopes, and interact with
             insurance carriers.
           </p>
+          <AuthorByline authorSlug="nolan-terry" />
         </header>
 
         <div className="prose prose-invert max-w-none space-y-6 text-gray-300 leading-relaxed">

@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { ArrowRight, Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { AUTHORS } from "@/lib/authors";
 
 interface Post {
   slug: string;
@@ -12,6 +13,7 @@ interface Post {
   date: string;
   readTime: string;
   category: string;
+  author: string;
 }
 
 export function BlogSearch({ posts }: { posts: Post[] }) {
@@ -120,6 +122,14 @@ export function BlogSearch({ posts }: { posts: Post[] }) {
                   {post.title}
                 </h2>
                 <p className="text-gray-400 leading-relaxed mb-4">{post.excerpt}</p>
+                {(() => {
+                  const author = AUTHORS.find(a => a.slug === post.author);
+                  return author ? (
+                    <p className="text-sm text-gray-400 mb-4">
+                      By <span className="text-blue-600">{author.name}</span>, {author.role}
+                    </p>
+                  ) : null;
+                })()}
                 <span className="inline-flex items-center text-sm text-primary-400 font-medium">
                   Read article <ArrowRight className="ml-1 h-4 w-4" />
                 </span>

@@ -2,6 +2,7 @@ import { NewsletterSignup } from "@/components/newsletter-signup";
 import { ReadingProgressBar } from "@/components/reading-progress";
 import { TableOfContents } from "@/components/table-of-contents";
 import { RelatedPosts } from "@/components/related-posts";
+import { AuthorByline } from "@/components/author-byline";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -31,9 +32,9 @@ export default function InsuranceCompaniesUsingAIAgainstContractors() {
   "datePublished": "2026-03-09",
   "dateModified": "2026-03-09",
   "author": {
-    "@type": "Organization",
-    "name": "ClaimScribe",
-    "url": "https://claimscribe.ai"
+    "@type": "Person",
+    "name": "Nolan Terry",
+    "url": "https://claimscribe.ai/blog/authors/nolan-terry"
   },
   "publisher": {
     "@type": "Organization",
@@ -105,6 +106,7 @@ export default function InsuranceCompaniesUsingAIAgainstContractors() {
           <p className="text-lg text-gray-400">
             Carriers are deploying AI through mobile apps to generate their own damage estimates, bypassing adjusters entirely. If you&apos;re still scoping claims manually, you&apos;re bringing a clipboard to a data fight.
           </p>
+          <AuthorByline authorSlug="nolan-terry" />
         </header>
 
         <div className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-a:text-primary-400 prose-strong:text-white">

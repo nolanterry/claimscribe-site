@@ -2,6 +2,7 @@ import { NewsletterSignup } from "@/components/newsletter-signup";
 import { ReadingProgressBar } from "@/components/reading-progress";
 import { TableOfContents } from "@/components/table-of-contents";
 import { RelatedPosts } from "@/components/related-posts";
+import { AuthorByline } from "@/components/author-byline";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -30,7 +31,7 @@ export default function SupplementWritingGuide() {
     description: "Master the art of writing insurance claim supplements. Learn when to supplement, what documentation adjusters need, and how to recover $5K-$20K+ per job.",
     datePublished: "2026-03-17",
     dateModified: "2026-03-17",
-    author: { "@type": "Organization", name: "ClaimScribe", url: "https://claimscribe.ai" },
+    author: { "@type": "Person", name: "Nolan Terry", url: "https://claimscribe.ai/blog/authors/nolan-terry" },
     publisher: { "@type": "Organization", name: "ClaimScribe", url: "https://claimscribe.ai" },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://claimscribe.ai/blog/supplement-writing-restoration-contractors" },
   };
@@ -64,6 +65,7 @@ export default function SupplementWritingGuide() {
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-8">
             Supplement Writing for Restoration Contractors: Get Paid What You&apos;re Owed
           </h1>
+          <AuthorByline authorSlug="nolan-terry" />
 
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-xl text-gray-300 leading-relaxed">

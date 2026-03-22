@@ -2,6 +2,7 @@ import { NewsletterSignup } from "@/components/newsletter-signup";
 import { ReadingProgressBar } from "@/components/reading-progress";
 import { TableOfContents } from "@/components/table-of-contents";
 import { RelatedPosts } from "@/components/related-posts";
+import { AuthorByline } from "@/components/author-byline";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -33,9 +34,9 @@ export default function FireDamageScopingGuide() {
     datePublished: "2026-03-17",
     dateModified: "2026-03-17",
     author: {
-      "@type": "Organization",
-      name: "ClaimScribe",
-      url: "https://claimscribe.ai",
+      "@type": "Person",
+      name: "Nolan Terry",
+      url: "https://claimscribe.ai/blog/authors/nolan-terry",
     },
     publisher: {
       "@type": "Organization",
@@ -108,6 +109,7 @@ export default function FireDamageScopingGuide() {
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-8">
             Fire Damage Restoration Scoping Guide: Room-by-Room Checklist
           </h1>
+          <AuthorByline authorSlug="nolan-terry" />
 
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-xl text-gray-300 leading-relaxed">

@@ -2,6 +2,7 @@ import { NewsletterSignup } from "@/components/newsletter-signup";
 import { ReadingProgressBar } from "@/components/reading-progress";
 import { TableOfContents } from "@/components/table-of-contents";
 import { RelatedPosts } from "@/components/related-posts";
+import { AuthorByline } from "@/components/author-byline";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -30,7 +31,7 @@ export default function StormDamageChecklist() {
     description: "Complete storm damage assessment checklist covering wind, hail, rain intrusion, and debris impact for restoration contractors.",
     datePublished: "2026-03-17",
     dateModified: "2026-03-17",
-    author: { "@type": "Organization", name: "ClaimScribe", url: "https://claimscribe.ai" },
+    author: { "@type": "Person", name: "Nolan Terry", url: "https://claimscribe.ai/blog/authors/nolan-terry" },
     publisher: { "@type": "Organization", name: "ClaimScribe", url: "https://claimscribe.ai" },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://claimscribe.ai/blog/storm-damage-assessment-checklist" },
   };
@@ -64,6 +65,7 @@ export default function StormDamageChecklist() {
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-8">
             Storm Damage Assessment Checklist for Restoration Contractors
           </h1>
+          <AuthorByline authorSlug="nolan-terry" />
 
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-xl text-gray-300 leading-relaxed">

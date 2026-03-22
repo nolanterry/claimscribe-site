@@ -2,6 +2,7 @@ import { NewsletterSignup } from "@/components/newsletter-signup";
 import { ReadingProgressBar } from "@/components/reading-progress";
 import { TableOfContents } from "@/components/table-of-contents";
 import { RelatedPosts } from "@/components/related-posts";
+import { AuthorByline } from "@/components/author-byline";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -31,9 +32,9 @@ export default function AIDamageAssessmentRestoration() {
   "datePublished": "2026-03-05",
   "dateModified": "2026-03-05",
   "author": {
-    "@type": "Organization",
-    "name": "ClaimScribe",
-    "url": "https://claimscribe.ai"
+    "@type": "Person",
+    "name": "Nolan Terry",
+    "url": "https://claimscribe.ai/blog/authors/nolan-terry"
   },
   "publisher": {
     "@type": "Organization",
@@ -105,6 +106,7 @@ export default function AIDamageAssessmentRestoration() {
           <p className="text-lg text-gray-400">
             How AI photo analysis speeds up scoping, reduces missed items, and gets claims approved faster than traditional manual assessment methods.
           </p>
+          <AuthorByline authorSlug="nolan-terry" />
         </header>
 
         <div className="prose prose-invert max-w-none space-y-6 text-gray-300 leading-relaxed">

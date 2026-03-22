@@ -2,6 +2,7 @@ import { NewsletterSignup } from "@/components/newsletter-signup";
 import { ReadingProgressBar } from "@/components/reading-progress";
 import { TableOfContents } from "@/components/table-of-contents";
 import { RelatedPosts } from "@/components/related-posts";
+import { AuthorByline } from "@/components/author-byline";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -105,6 +106,7 @@ export default function WaterDamageScopeOfWorkTemplate() {
           <p className="text-lg text-gray-400">
             Walk through a complete water damage scope: demo, mitigation, reconstruction, contents. Learn the essential phases and how ClaimScribe automates this process.
           </p>
+          <AuthorByline authorSlug="claimscribe-team" />
         </header>
 
         <div className="prose prose-invert max-w-none space-y-6 text-gray-300 leading-relaxed">
