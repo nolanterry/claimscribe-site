@@ -5,8 +5,42 @@ export interface BlogPost {
   date: string;
   readTime: string;
   category: string;
+  tags: string[];
   author: string;
 }
+
+export function getAllTags(): { tag: string; count: number }[] {
+  const tagMap = new Map<string, number>();
+  POSTS.forEach((p) => p.tags.forEach((t) => tagMap.set(t, (tagMap.get(t) || 0) + 1)));
+  return Array.from(tagMap.entries())
+    .map(([tag, count]) => ({ tag, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function getPostsByTag(tag: string): BlogPost[] {
+  return POSTS.filter((p) => p.tags.includes(tag));
+}
+
+export const TAG_LABELS: Record<string, string> = {
+  "scoping": "Scoping",
+  "water-damage": "Water Damage",
+  "fire-damage": "Fire Damage",
+  "mold": "Mold",
+  "storm-damage": "Storm Damage",
+  "xactimate": "Xactimate",
+  "documentation": "Documentation",
+  "insurance": "Insurance",
+  "supplements": "Supplements",
+  "estimating": "Estimating",
+  "business": "Business",
+  "profit": "Profit",
+  "ai": "AI",
+  "contents": "Contents",
+  "claims": "Claims",
+  "software": "Software",
+  "best-practices": "Best Practices",
+  "templates": "Templates",
+};
 
 export const POSTS: BlogPost[] = [
   {
@@ -17,6 +51,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-17",
     readTime: "14 min read",
     category: "Scoping Guides",
+    tags: ["scoping", "fire-damage", "xactimate", "documentation"],
     author: "nolan-terry",
   },
   {
@@ -27,6 +62,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-17",
     readTime: "13 min read",
     category: "Scoping Guides",
+    tags: ["scoping", "mold", "documentation", "insurance"],
     author: "nolan-terry",
   },
   {
@@ -37,6 +73,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-17",
     readTime: "15 min read",
     category: "Claims & Billing",
+    tags: ["supplements", "claims", "insurance", "business"],
     author: "nolan-terry",
   },
   {
@@ -47,6 +84,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-17",
     readTime: "12 min read",
     category: "Scoping Guides",
+    tags: ["storm-damage", "scoping", "documentation", "insurance"],
     author: "nolan-terry",
   },
   {
@@ -57,6 +95,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-17",
     readTime: "16 min read",
     category: "Business Growth",
+    tags: ["business", "profit", "estimating"],
     author: "nolan-terry",
   },
   {
@@ -67,6 +106,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-17",
     readTime: "14 min read",
     category: "Scoping Guides",
+    tags: ["contents", "scoping", "xactimate", "documentation"],
     author: "nolan-terry",
   },
   {
@@ -77,6 +117,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-09",
     readTime: "9 min read",
     category: "Industry Trends",
+    tags: ["ai", "insurance", "claims", "estimating"],
     author: "nolan-terry",
   },
   {
@@ -87,6 +128,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-05",
     readTime: "12 min read",
     category: "Industry Innovation",
+    tags: ["ai", "scoping", "documentation", "software"],
     author: "nolan-terry",
   },
   {
@@ -97,6 +139,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-05",
     readTime: "11 min read",
     category: "Industry Innovation",
+    tags: ["ai", "documentation", "software"],
     author: "nolan-terry",
   },
   {
@@ -107,6 +150,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-04",
     readTime: "13 min read",
     category: "Scoping Guides",
+    tags: ["scoping", "documentation", "best-practices", "insurance"],
     author: "claimscribe-team",
   },
   {
@@ -117,6 +161,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-01",
     readTime: "14 min read",
     category: "Estimating Tips",
+    tags: ["xactimate", "estimating", "supplements", "claims"],
     author: "claimscribe-team",
   },
   {
@@ -127,6 +172,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-03-01",
     readTime: "10 min read",
     category: "Estimating Tips",
+    tags: ["xactimate", "estimating", "claims", "insurance"],
     author: "claimscribe-team",
   },
   {
@@ -137,6 +183,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-02-28",
     readTime: "16 min read",
     category: "Templates & Guides",
+    tags: ["water-damage", "scoping", "templates", "xactimate"],
     author: "claimscribe-team",
   },
   {
@@ -147,6 +194,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-02-27",
     readTime: "12 min read",
     category: "Documentation Guide",
+    tags: ["water-damage", "documentation", "best-practices", "insurance"],
     author: "claimscribe-team",
   },
   {
@@ -157,6 +205,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-02-26",
     readTime: "11 min read",
     category: "Business Growth",
+    tags: ["business", "profit", "supplements", "estimating"],
     author: "claimscribe-team",
   },
   {
@@ -167,6 +216,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-02-25",
     readTime: "18 min read",
     category: "Software Reviews",
+    tags: ["software", "xactimate", "ai"],
     author: "claimscribe-team",
   },
   {
@@ -177,6 +227,7 @@ export const POSTS: BlogPost[] = [
     date: "2026-02-22",
     readTime: "15 min read",
     category: "Documentation Guide",
+    tags: ["documentation", "insurance", "claims", "best-practices"],
     author: "claimscribe-team",
   },
 ];

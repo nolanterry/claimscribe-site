@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAllTags } from "@/lib/blog-posts";
 
 const blogSlugs = [
   "fire-damage-restoration-scoping-guide",
@@ -50,5 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/privacy`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${base}/terms`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${base}/accessibility`, lastModified: new Date(), changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${base}/blog/tag`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.5 },
+    ...getAllTags().map(({ tag }) => ({ url: `${base}/blog/tag/${tag}`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.5 })),
   ];
 }
