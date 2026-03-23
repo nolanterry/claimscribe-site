@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { CheckCircle2, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,6 +11,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { FadeIn, FadeInScale } from "@/components/motion-wrapper";
+import { PricingToggle } from "./pricing-toggle";
+import { AnimatePresence, motion } from "framer-motion";
 
 const plans = [
   {
@@ -133,6 +136,8 @@ const pricingFaqSchema = {
 };
 
 export default function PricingPage() {
+  const [isAnnual, setIsAnnual] = useState(false);
+
   return (
     <>
       <script
@@ -155,6 +160,7 @@ export default function PricingPage() {
       {/* Plan Cards */}
       <section className="py-24 border-t border-white/5">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <PricingToggle isAnnual={isAnnual} onToggle={setIsAnnual} />
           <div className="grid md:grid-cols-2 gap-8">
             {plans.map((plan, i) => (
               <FadeInScale key={plan.name} delay={i * 0.1}>
@@ -168,12 +174,31 @@ export default function PricingPage() {
                     <CardTitle className="text-white text-2xl">{plan.name}</CardTitle>
                     <p className="text-sm text-gray-500">{plan.description}</p>
                     <div className="pt-4">
-                      <span className="text-5xl font-bold text-white">{plan.price}</span>
-                      <span className="text-gray-500">{plan.period}</span>
+                      <AnimatePresence mode="wait">
+                        <motion.span
+                          key={isAnnual ? "annual" : "monthly"}
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 10 }}
+                          transition={{ duration: 0.2 }}
+                          className="text-5xl font-bold text-white"
+                        >
+                          {isAnnual ? plan.annualPrice : plan.price}
+                        </motion.span>
+                      </AnimatePresence>
+                      <span className="text-gray-500">
+                        {isAnnual ? "/mo, billed annually" : plan.period}
+                      </span>
                     </div>
-                    <p className="text-xs text-gray-600 mt-1">
-                      or {plan.annualPrice}/mo billed annually
-                    </p>
+                    {isAnnual && (
+                      <motion.p
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        className="text-xs text-emerald-400 font-medium mt-1"
+                      >
+                        Save ~15% vs monthly
+                      </motion.p>
+                    )}
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-3 mb-8">
