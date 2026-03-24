@@ -19,6 +19,7 @@ const footerLinks = {
     { href: "/use-cases/multi-location-franchises", label: "Multi-Location Franchises" },
   ],
   Resources: [
+    { href: "/resources", label: "Free Downloads" },
     { href: "/blog/how-to-write-restoration-scope-of-work", label: "Scope Writing Guide" },
     { href: "/blog/xactimate-tips-faster-claims", label: "Xactimate Tips" },
     { href: "/customers", label: "Customers" },
