@@ -13,6 +13,11 @@ const footerLinks = {
     { href: "/contact", label: "Contact" },
     { href: "/blog", label: "Blog" },
   ],
+  "Use Cases": [
+    { href: "/use-cases/water-damage-restoration", label: "Water Damage Restoration" },
+    { href: "/use-cases/fire-damage-contractors", label: "Fire & Smoke Damage" },
+    { href: "/use-cases/multi-location-franchises", label: "Multi-Location Franchises" },
+  ],
   Resources: [
     { href: "/blog/how-to-write-restoration-scope-of-work", label: "Scope Writing Guide" },
     { href: "/blog/xactimate-tips-faster-claims", label: "Xactimate Tips" },
