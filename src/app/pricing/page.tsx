@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/accordion";
 import { FadeIn, FadeInScale } from "@/components/motion-wrapper";
 import { PricingToggle } from "./pricing-toggle";
+import { TrustBadges } from "./trust-badges";
 import { AnimatePresence, motion } from "framer-motion";
 
 const plans = [
@@ -300,6 +301,9 @@ export default function PricingPage() {
           </FadeIn>
         </div>
       </section>
+
+      {/* Trust Badges */}
+      <TrustBadges />
 
       {/* CTA */}
       <section className="py-24 border-t border-white/5 bg-[#080810]">
