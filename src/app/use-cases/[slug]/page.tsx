@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { CheckCircle2, ArrowRight, Quote } from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 
 interface UseCase {
   slug: string;
@@ -15,7 +15,6 @@ interface UseCase {
   painPoints: { title: string; desc: string }[];
   solutions: { title: string; desc: string; feature: string }[];
   metrics: { stat: string; label: string }[];
-  testimonial: { quote: string; name: string; role: string; company: string };
 }
 
 const USE_CASES: UseCase[] = [
@@ -74,13 +73,6 @@ const USE_CASES: UseCase[] = [
       { stat: "94%", label: "first-submission approval rate" },
       { stat: "$4,200", label: "average additional recovery per claim" },
     ],
-    testimonial: {
-      quote:
-        "We were leaving money on the table on every water loss because our documentation wasn't strong enough. ClaimScribe changed that overnight. Our scopes are tighter, our moisture documentation is bulletproof, and adjusters are approving on the first submission. We're recovering $3,000–$5,000 more per job on average.",
-      name: "Brandon Torres",
-      role: "Operations Manager",
-      company: "Rapid Response Restoration",
-    },
   },
   {
     slug: "fire-damage-contractors",
@@ -137,13 +129,6 @@ const USE_CASES: UseCase[] = [
       { stat: "$12K", label: "average additional recovery on fire claims" },
       { stat: "88%", label: "first-submission approval rate on fire losses" },
     ],
-    testimonial: {
-      quote:
-        "Fire losses used to take our lead estimator two full days to scope. With ClaimScribe, we're completing the same quality scope in under 6 hours. The content pack-out feature alone paid for the software — we're capturing 2–3x more items than we were manually, and every one of those items is recoverable revenue.",
-      name: "Lisa Drummond",
-      role: "Owner",
-      company: "Phoenix Fire Restoration",
-    },
   },
   {
     slug: "multi-location-franchises",
@@ -200,13 +185,6 @@ const USE_CASES: UseCase[] = [
       { stat: "92%", label: "franchise-wide first-submission approval rate" },
       { stat: "100%", label: "location visibility for corporate teams" },
     ],
-    testimonial: {
-      quote:
-        "We run 28 restoration franchise locations across the Midwest. Before ClaimScribe, our best location was recovering $6K more per job than our worst. After rolling out ClaimScribe across all locations, that gap closed to under $1,500. The franchise-wide dashboard changed how we coach our underperforming locations — we can see exactly where they're leaving money.",
-      name: "Michael Okafor",
-      role: "VP of Franchise Operations",
-      company: "RestoreForce National",
-    },
   },
 ];
 
@@ -319,22 +297,6 @@ export default function UseCaseDetailPage({ params }: { params: { slug: string }
                   <p className="text-sm text-gray-400 mt-1">{m.label}</p>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonial */}
-        <section className="py-20">
-          <div className="max-w-3xl mx-auto px-4 text-center">
-            <Quote className="w-10 h-10 text-blue-400 mx-auto mb-6" />
-            <blockquote className="text-xl text-gray-200 leading-relaxed italic mb-6">
-              &ldquo;{uc.testimonial.quote}&rdquo;
-            </blockquote>
-            <div>
-              <p className="font-semibold text-white">{uc.testimonial.name}</p>
-              <p className="text-sm text-gray-500">
-                {uc.testimonial.role}, {uc.testimonial.company}
-              </p>
             </div>
           </div>
         </section>

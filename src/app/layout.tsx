@@ -7,7 +7,6 @@ import { ExitIntentPopup } from "@/components/exit-intent-popup";
 import { CookieConsent } from "@/components/cookie-consent";
 import { PromoBar } from "@/components/promo-bar";
 import { MobileCtaBar } from "@/components/mobile-cta-bar";
-import { SocialProofToast } from "@/components/social-proof-toast";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -178,7 +177,6 @@ export default function RootLayout({
         <ExitIntentPopup />
         <MobileCtaBar />
         <CookieConsent />
-        <SocialProofToast />
       </body>
     </html>
   );

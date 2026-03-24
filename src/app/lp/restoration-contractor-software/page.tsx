@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Check, BrainCircuit, Star, Droplets, Flame, Wind, Bug } from "lucide-react";
+import { ArrowRight, Check, BrainCircuit, Droplets, Flame, Wind, Bug } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "AI Scoping Software for Restoration Contractors | ClaimScribe",
@@ -31,12 +31,6 @@ const FEATURES = [
   { title: "Photo Evidence Linking", desc: "Every scope item links to timestamped photos. Adjusters see exactly what you documented on-site." },
   { title: "Team Collaboration", desc: "Multiple estimators can work on the same project. See who scoped what, when, with full audit trail." },
   { title: "Professional PDF Reports", desc: "One-click export with your branding, photos, line items, and totals. Ready to submit to any carrier." },
-];
-
-const TESTIMONIALS = [
-  { name: "Chris B.", role: "Owner, 24/7 Water Restoration", text: "We handle 15-20 water losses per month. ClaimScribe cut our scope time by 60% and our supplementals dropped to almost zero." },
-  { name: "Angela R.", role: "Estimator, Fire & Smoke Specialists", text: "Fire scopes are the hardest to get right. The AI catches line items I used to miss — char damage, smoke cleaning, content pack-outs." },
-  { name: "Marcus J.", role: "Ops Manager, Multi-State Restoration", text: "We standardized our scoping process across 4 locations. Every estimator produces consistent, adjuster-ready scopes now." },
 ];
 
 const SIGNUP_URL = "https://app.claimscribe.ai";
@@ -131,27 +125,6 @@ export default function LPRestorationContractorSoftware() {
                   <p className="text-sm font-semibold text-white">{f.title}</p>
                   <p className="text-xs text-gray-500 mt-1">{f.desc}</p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-center text-white mb-10">
-            Used by Restoration Teams Nationwide
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t) => (
-              <div key={t.name} className="rounded-xl p-6 border border-white/10" style={{ background: "rgba(17, 17, 34, 0.7)" }}>
-                <div className="flex gap-0.5 mb-3">
-                  {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-amber-400 fill-amber-400" />)}
-                </div>
-                <p className="text-sm text-gray-300 mb-4 italic">&ldquo;{t.text}&rdquo;</p>
-                <p className="text-sm font-semibold text-white">{t.name}</p>
-                <p className="text-xs text-gray-500">{t.role}</p>
               </div>
             ))}
           </div>

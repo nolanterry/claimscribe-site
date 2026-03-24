@@ -119,12 +119,12 @@ export default function DemoPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Full Name *</label>
-                  <input type="text" id="name" name="name" required className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-white placeholder-gray-500" placeholder="Tom Rodriguez" />
+                  <input type="text" id="name" name="name" required className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-white placeholder-gray-500" placeholder="Your full name" />
             autoComplete="name"
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">Work Email *</label>
-                  <input type="email" id="email" name="email" required className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-white placeholder-gray-500" placeholder="tom@restorepro.com" />
+                  <input type="email" id="email" name="email" required className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-white placeholder-gray-500" placeholder="you@yourcompany.com" />
             autoComplete="email"
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Check, Camera, AlertTriangle, Clock, FileText, Star, BrainCircuit } from "lucide-react";
+import { ArrowRight, Check, Camera, AlertTriangle, Clock, FileText, BrainCircuit } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "AI-Powered Damage Scoping Software | ClaimScribe",
@@ -24,12 +24,6 @@ const FEATURES = [
   "Photo evidence linked to each scope item",
   "PDF export with professional formatting",
   "Custom templates for water, fire, mold & storm",
-];
-
-const TESTIMONIALS = [
-  { name: "Derek W.", role: "Owner, Water Damage Restoration Co.", text: "I used to spend 3 hours on a scope. ClaimScribe got my last one done in 40 minutes — and the adjuster approved it first try." },
-  { name: "Maria L.", role: "Project Manager, Multi-Location Restoration", text: "Voice-to-scope changed everything. I walk through the property, talk into my phone, and the scope writes itself." },
-  { name: "Jason T.", role: "Independent Claims Adjuster", text: "The Xactimate code mapping is surprisingly accurate. I still review everything, but it cuts my documentation time in half." },
 ];
 
 const SIGNUP_URL = "https://app.claimscribe.ai";
@@ -113,27 +107,6 @@ export default function LPAIDamageScoping() {
               <div key={f} className="flex items-start gap-3 p-4 rounded-lg border border-white/10" style={{ background: "#0a0a0f" }}>
                 <Check className="text-blue-500 shrink-0 mt-0.5" size={18} />
                 <span className="text-sm text-gray-300">{f}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-center text-white mb-10">
-            Trusted by Restoration Pros
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t) => (
-              <div key={t.name} className="rounded-xl p-6 border border-white/10" style={{ background: "rgba(17, 17, 34, 0.7)" }}>
-                <div className="flex gap-0.5 mb-3">
-                  {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-amber-400 fill-amber-400" />)}
-                </div>
-                <p className="text-sm text-gray-300 mb-4 italic">&ldquo;{t.text}&rdquo;</p>
-                <p className="text-sm font-semibold text-white">{t.name}</p>
-                <p className="text-xs text-gray-500">{t.role}</p>
               </div>
             ))}
           </div>

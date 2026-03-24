@@ -11,7 +11,6 @@ import {
   FileDown,
   Hash,
   Clock,
-  Star,
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
@@ -67,30 +66,6 @@ const features = [
     title: "5-Minute Scopes",
     description:
       "What used to take hours now takes minutes. Walk the site, capture the damage, and have a complete scope before you leave.",
-  },
-];
-
-const testimonials = [
-  {
-    name: "Mike Rodriguez",
-    role: "Owner, Rodriguez Restoration",
-    quote:
-      "ClaimScribe cut our scope writing time by 80%. We used to spend 3-4 hours per scope, now we're done in 15 minutes on-site.",
-    rating: 5,
-  },
-  {
-    name: "Sarah Chen",
-    role: "Project Manager, AllClear Restoration",
-    quote:
-      "The Xactimate code mapping alone is worth the subscription. No more looking up codes manually — the AI nails it every time.",
-    rating: 5,
-  },
-  {
-    name: "David Thompson",
-    role: "Lead Estimator, StormGuard Services",
-    quote:
-      "Our approval rate with adjusters went up 35% since switching to ClaimScribe. The scopes are more thorough and professional.",
-    rating: 5,
   },
 ];
 
@@ -294,7 +269,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonial Carousel */}
+      {/* Feature Benefits */}
       <TestimonialCarousel />
 
       {/* Pricing */}
