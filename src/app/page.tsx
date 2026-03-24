@@ -29,6 +29,7 @@ import {
   StaggerContainer,
   StaggerItem,
 } from "@/components/motion-wrapper";
+import { TestimonialCarousel } from "@/components/testimonial-carousel";
 
 const features = [
   {
@@ -293,48 +294,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="py-24 sm:py-32 border-t border-white/5">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <FadeIn className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Trusted by Restoration Contractors
-            </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Join hundreds of contractors who have transformed their scope writing
-              process with ClaimScribe AI.
-            </p>
-          </FadeIn>
-
-          <StaggerContainer className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial) => (
-              <StaggerItem key={testimonial.name}>
-                <Card className="h-full bg-card/50">
-                  <CardContent className="pt-6">
-                    <div className="flex gap-1 mb-4">
-                      {Array.from({ length: testimonial.rating }).map((_, i) => (
-                        <Star
-                          key={i}
-                          className="h-4 w-4 fill-yellow-500 text-yellow-500"
-                        />
-                      ))}
-                    </div>
-                    <blockquote className="text-gray-300 mb-6 leading-relaxed">
-                      &ldquo;{testimonial.quote}&rdquo;
-                    </blockquote>
-                    <div>
-                      <div className="font-semibold text-white text-sm">
-                        {testimonial.name}
-                      </div>
-                      <div className="text-xs text-gray-500">{testimonial.role}</div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </StaggerItem>
-            ))}
-          </StaggerContainer>
-        </div>
-      </section>
+      {/* Testimonial Carousel */}
+      <TestimonialCarousel />
 
       {/* Pricing */}
       <section className="py-24 sm:py-32 border-t border-white/5 bg-[#080810]">
