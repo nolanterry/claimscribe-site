@@ -40,9 +40,98 @@ export const TAG_LABELS: Record<string, string> = {
   "software": "Software",
   "best-practices": "Best Practices",
   "templates": "Templates",
+  "project-management": "Project Management",
 };
 
 export const POSTS: BlogPost[] = [
+  {
+    slug: "acv-vs-rcv-depreciation-recovery",
+    title: "ACV vs RCV: How Restoration Contractors Recover Full Replacement Cost",
+    excerpt:
+      "Understand actual cash value vs replacement cost value on insurance claims. Learn how depreciation works, when to file for recoverable depreciation, and how to maximize claim payouts.",
+    date: "2026-03-26",
+    readTime: "14 min read",
+    category: "Claims & Billing",
+    tags: ["claims", "insurance", "estimating", "business"],
+    author: "nolan-terry",
+  },
+  {
+    slug: "large-loss-commercial-restoration",
+    title: "Large Loss Commercial Restoration: Managing $500K+ Projects",
+    excerpt:
+      "How to manage large loss commercial restoration projects. Covers multi-phase scoping, subcontractor coordination, business interruption claims, and documentation at scale.",
+    date: "2026-03-26",
+    readTime: "16 min read",
+    category: "Project Management",
+    tags: ["scoping", "documentation", "business", "fire-damage"],
+    author: "nolan-terry",
+  },
+  {
+    slug: "emergency-services-billing-restoration",
+    title: "Emergency Services Billing for Restoration Contractors: After-Hours, Board-Up & Water Extraction",
+    excerpt:
+      "How to bill emergency restoration services correctly. Covers after-hours rates, board-up and tarp pricing, water extraction equipment charges, and Xactimate line items.",
+    date: "2026-03-26",
+    readTime: "13 min read",
+    category: "Claims & Billing",
+    tags: ["estimating", "xactimate", "water-damage", "business"],
+    author: "nolan-terry",
+  },
+  {
+    slug: "roof-damage-scoping-hail-wind",
+    title: "Roof Damage Scoping Guide: Hail, Wind & Storm Assessment for Restoration Contractors",
+    excerpt:
+      "Complete roof damage scoping guide for hail, wind, and storm losses. Learn how to identify damage patterns, document for adjusters, and write roofing scopes that get approved.",
+    date: "2026-03-26",
+    readTime: "15 min read",
+    category: "Scoping Guides",
+    tags: ["scoping", "storm-damage", "documentation", "insurance"],
+    author: "nolan-terry",
+  },
+  {
+    slug: "subcontractor-management-restoration",
+    title: "Subcontractor Management for Restoration Contractors: Vetting, Scheduling & Payment",
+    excerpt:
+      "How to manage subcontractors on restoration jobs. Covers vetting, insurance requirements, scheduling, scope sheets, payment terms, and lien waiver protocols.",
+    date: "2026-03-26",
+    readTime: "14 min read",
+    category: "Project Management",
+    tags: ["business", "best-practices"],
+    author: "nolan-terry",
+  },
+  {
+    slug: "smoke-damage-classes-cleaning-methods",
+    title: "Smoke Damage Classes & Cleaning Methods: A Restoration Contractor's Guide",
+    excerpt:
+      "Learn the four classes of smoke damage (dry, wet, protein, fuel oil), proper cleaning methods for each type, and the Xactimate line items for smoke and soot restoration.",
+    date: "2026-03-26",
+    readTime: "15 min read",
+    category: "Scoping Guides",
+    tags: ["fire-damage", "scoping", "best-practices", "xactimate"],
+    author: "nolan-terry",
+  },
+  {
+    slug: "drying-equipment-placement-science",
+    title: "Drying Equipment Placement: Air Movers, Dehumidifiers & the Science of Water Restoration",
+    excerpt:
+      "Master drying equipment placement for water damage restoration. Learn air mover positioning, dehumidifier sizing, psychrometric principles, and documentation for insurance claims.",
+    date: "2026-03-26",
+    readTime: "16 min read",
+    category: "Technical Guides",
+    tags: ["water-damage", "best-practices", "documentation", "estimating"],
+    author: "nolan-terry",
+  },
+  {
+    slug: "scaling-restoration-business-1m-to-5m",
+    title: "Scaling a Restoration Business from $1M to $5M: The Operational Playbook",
+    excerpt:
+      "How to scale a restoration company from $1M to $5M in revenue. Covers hiring, systems, fleet, insurance program work, marketing, and the operational changes that make growth sustainable.",
+    date: "2026-03-26",
+    readTime: "17 min read",
+    category: "Business Growth",
+    tags: ["business", "profit", "software"],
+    author: "nolan-terry",
+  },
   {
     slug: "fire-damage-restoration-scoping-guide",
     title: "Fire Damage Restoration Scoping Guide: Room-by-Room Checklist",

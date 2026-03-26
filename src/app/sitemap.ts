@@ -2,6 +2,14 @@ import type { MetadataRoute } from "next";
 import { getAllTags } from "@/lib/blog-posts";
 
 const blogSlugs = [
+  "acv-vs-rcv-depreciation-recovery",
+  "large-loss-commercial-restoration",
+  "emergency-services-billing-restoration",
+  "roof-damage-scoping-hail-wind",
+  "subcontractor-management-restoration",
+  "smoke-damage-classes-cleaning-methods",
+  "drying-equipment-placement-science",
+  "scaling-restoration-business-1m-to-5m",
   "fire-damage-restoration-scoping-guide",
   "mold-remediation-scope-of-work",
   "supplement-writing-restoration-contractors",

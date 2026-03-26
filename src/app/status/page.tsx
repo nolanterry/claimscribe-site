@@ -1,4 +1,4 @@
-import { Header } from "@/components/header";
+import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import type { Metadata } from "next";
 
@@ -82,7 +82,7 @@ export default function StatusPage() {
 
   return (
     <>
-      <Header />
+      <Navbar />
       <main id="main-content" className="min-h-screen bg-gray-50">
         {/* Overall Status Banner */}
         <section className={`${overallConfig.bgColor} border-b`}>
