@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllTags } from "@/lib/blog-posts";
+import { GLOSSARY_TERMS } from "@/lib/glossary-data";
 
 const blogSlugs = [
   "acv-vs-rcv-depreciation-recovery",
@@ -60,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/authors`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 },
     { url: `${base}/blog/authors/nolan-terry`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 },
     { url: `${base}/blog/authors/claimscribe-team`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: `${base}/compare`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${base}/compare/xactimate`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${base}/compare/encircle`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${base}/compare/paper`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
@@ -69,5 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/accessibility`, lastModified: new Date(), changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${base}/blog/tag`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.5 },
     ...getAllTags().map(({ tag }) => ({ url: `${base}/blog/tag/${tag}`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.5 })),
+    { url: `${base}/glossary`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
+    ...GLOSSARY_TERMS.map((term) => ({ url: `${base}/glossary/${term.slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 })),
   ];
 }

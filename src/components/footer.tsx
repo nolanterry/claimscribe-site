@@ -24,6 +24,7 @@ const footerLinks = {
     { href: "/blog/xactimate-tips-faster-claims", label: "Xactimate Tips" },
     { href: "/customers", label: "Customers" },
     { href: "/help", label: "Help Center" },
+    { href: "/glossary", label: "Glossary" },
   ],
   Legal: [
     { href: "/privacy", label: "Privacy Policy" },
