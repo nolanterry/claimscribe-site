@@ -32,6 +32,7 @@ const footerLinks = {
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms of Service" },
     { href: "/accessibility", label: "Accessibility" },
+    { href: "/security", label: "Security" },
   ],
 };
 

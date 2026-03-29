@@ -71,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/privacy`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${base}/terms`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${base}/accessibility`, lastModified: new Date(), changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${base}/security`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 },
     { url: `${base}/blog/tag`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.5 },
     ...getAllTags().map(({ tag }) => ({ url: `${base}/blog/tag/${tag}`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.5 })),
     { url: `${base}/glossary`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
