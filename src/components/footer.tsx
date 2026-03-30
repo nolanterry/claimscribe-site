@@ -30,6 +30,7 @@ const footerLinks = {
     { href: "/glossary", label: "Glossary" },
     { href: "/partners", label: "Partners" },
     { href: "/careers", label: "Careers" },
+    { href: "/reports", label: "Reports" },
   ],
   Legal: [
     { href: "/privacy", label: "Privacy Policy" },
