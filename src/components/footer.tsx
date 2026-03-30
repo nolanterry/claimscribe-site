@@ -8,6 +8,7 @@ const footerLinks = {
     { href: "/pricing", label: "Pricing" },
     { href: "/getting-started", label: "Getting Started" },
     { href: "/migrate-from", label: "Migration Guides" },
+    { href: "/webinars", label: "Webinars" },
     { href: "/#how-it-works", label: "How It Works" },
   ],
   Company: [

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllTags } from "@/lib/blog-posts";
 import { GLOSSARY_TERMS } from "@/lib/glossary-data";
+import { WEBINARS } from "@/lib/webinar-data";
 
 const blogSlugs = [
   "acv-vs-rcv-depreciation-recovery",
@@ -81,5 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getAllTags().map(({ tag }) => ({ url: `${base}/blog/tag/${tag}`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.5 })),
     { url: `${base}/glossary`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
     ...GLOSSARY_TERMS.map((term) => ({ url: `${base}/glossary/${term.slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 })),
+    { url: `${base}/webinars`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
+    ...WEBINARS.map((w) => ({ url: `${base}/webinars/${w.slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 })),
   ];
 }
