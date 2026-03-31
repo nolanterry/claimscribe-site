@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CASE_STUDIES } from "@/lib/case-study-data";
 import {
   ArrowRight,
   Clock,
@@ -72,19 +73,71 @@ export default function CustomersPage() {
         <FadeIn>
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Customer Stories
-              <br />
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                Coming Soon
-              </span>
+              Customer Success Stories
             </h1>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              We&apos;re collecting real stories from restoration contractors
-              using ClaimScribe. In the meantime, here&apos;s what ClaimScribe
-              can do for your business.
+              See how restoration contractors are using ClaimScribe to write
+              better scopes faster and increase their average claim values.
             </p>
           </div>
         </FadeIn>
+      </section>
+
+      {/* Customer Stories */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <StaggerContainer className="grid lg:grid-cols-2 gap-8 mb-12">
+            {CASE_STUDIES.map((study) => (
+              <StaggerItem key={study.slug}>
+                <Card className="bg-white/5 border-white/10 h-full">
+                  <CardContent className="p-6">
+                    <div className="flex items-start justify-between mb-4">
+                      <h3 className="text-xl font-bold text-white">
+                        {study.companyName}
+                      </h3>
+                      <span className="bg-emerald-500/20 text-emerald-400 text-sm px-3 py-1 rounded-full border border-emerald-500/30">
+                        {study.industry}
+                      </span>
+                    </div>
+                    <p className="text-slate-300 mb-4 leading-relaxed">
+                      {study.hero.summary}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <div className="bg-slate-700/50 border border-slate-600/50 px-4 py-2 rounded-lg">
+                        <div className="font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent text-lg">
+                          {study.hero.keyMetric}
+                        </div>
+                        <div className="text-sm text-slate-400">Key Result</div>
+                      </div>
+                      <Link
+                        href={`/customers/${study.slug}`}
+                        className="inline-flex items-center gap-1 text-emerald-400 font-semibold hover:text-emerald-300 transition-colors"
+                      >
+                        Read Story <ArrowRight size={16} />
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+
+          <div className="text-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild>
+                <Link href="/pricing">
+                  Start Free Trial <ArrowRight size={18} className="ml-2" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/demo">Book a Demo</Link>
+              </Button>
+            </div>
+            <p className="text-sm text-slate-500 mt-4">
+              14 days free · No credit card · Cancel anytime
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* What ClaimScribe Does */}
